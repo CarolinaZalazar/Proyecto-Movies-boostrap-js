@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles-boostrap.css">
+    <script src="https://kit.fontawesome.com/d3e330292b.js" crossorigin="anonymous"></script>
+    <title>Codoflix</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bgRose">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index2.html">
+                <img class="logo" src="./favicon.ico" alt="Logo">
+                <span>Codoflix</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active fs-1.5" aria-current="page" href="#">Tendencias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active fs-1.5" href="./pages/resgistrarse-boostrap.html">Registrase</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active fs-1.5" href="./pages/inciarSecion-boostrap.html">Iniciar Sesión</a>
+                  </li>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="section-principal d-flex align-items-center justify-content-center text-center">
+            <div class="container">
+                <h1 class="display-4 text-white fw-bold">Peliculas y series ilimitadas en un solo lugar</h1>
+                <h2 class="lead text-white fw-custom">Disfruta donde quieras</h2>
+                <h2 class="lead text-white fw-custom">Cancela en cualquier momento</h2>
+                <a href="#tendencias" class="btn btn-primary btn-lg mt-3 rounded-lg">Registrarse</a>
+            </div>
+        </section>
+  
+        <section class="sectionBuscador py-5">
+            <div class="container text-center">
+                <h2 class="mb-4">¿Qué estas buscando para ver?</h2>
+                <form class="d-flex justify-content-center">
+                    <input class="form-control me-2 w-50 rounded-pill" type="search" placeholder="Buscar película" aria-label="Buscar">
+                    <button class="btn btn-primary rounded-pill" type="submit">Buscar</button>
+                </form>
+            </div>
+        </section>
+        <section class="tendencias">
+          <div class="container my-5">
+            <h1 class="mb-4">Tendencias</h1>
+            <div class="row" id="movieGrid"></div>
+        </div>
+        </section>
+        <footer class="footer bg-rose container-fluid">
+            <nav class="h-100">
+                <ul class="h-100 d-flex flex-column flex-md-row list-inline gap-3 justify-content-evenly align-items-center">
+                    <li class="list-inline-item"><a  class="text-white fs-4 text-decoration-none " href="#terminos">Términos y Condiciones</a></li>
+                    <li class="list-inline-item"><a  class="text-white fs-4 text-decoration-none" href="#ayuda">Ayuda</a></li>
+                    <li class="list-inline-item"><a  class="text-white fs-4 text-decoration-none" href="#preguntas">Preguntas Frecuentes</a></li>
+                    <li class="list-inline-item"><a  class="text-white fs-4 text-decoration-none" href="#preguntas">Administrador de Películas</a></li>
+                </ul>                
+            </nav>  
+                  
+        </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>   
+    <script src="./js/script-boostrap.js"></script>
+</body>
+</html>
