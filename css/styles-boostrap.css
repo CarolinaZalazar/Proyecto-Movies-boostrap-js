@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --main-color: #f5f5f5;
+    --secondary-color: #cba9c7;
+    --third-color: #455699;
+}
+body{
+    background-color: var(--third-color);
+    color: var(--main-color);
+}
+.bg-rose{
+    background: linear-gradient(to top, #cba9c7, #b191ba, #937baf, #7068a4, #455699);
+}
+.section-principal {
+    background: url('../assets/img/portada.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fw-custom{
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.sectionBuscador h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.sectionBuscador .form-control {
+    max-width: 400px;
+}
+.movie-card img {
+    border-radius: 10px;
+}
+.movie-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.movie-title {
+    font-size: 1.2rem;
+}
+.footer{
+    height: 15vh;
+    
+}
+/*Estilos de la pagina de Iniciar sesion*/
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg-image {
+    background-image: url('../assets/img/banner-regristro.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--third-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.login-form .form-control {
+    margin-bottom: 15px;
+}
+@media (max-width:575px) {
+    .fw-custom{
+        font-size: 1.8rem;
+    }
+    .footer{
+        height: initial;
+        nav{
+            height: initial;
+        }
+    }
+    
+}
